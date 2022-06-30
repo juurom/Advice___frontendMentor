@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="card">
+      <div id="title">ADVICE #<span id="adviceid">0</span></div>
+      <div id="text">"<span id="advicetext">Today's advice...</span>"</div>
+      <div id="line"></div>
+      <div id="button"><button id="generator"><img src="./images/icon-dice.svg"></button></div>
+    </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/juurom">Juurom</a>.
+  </div>
+  </div>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="quotegen.js"></script>

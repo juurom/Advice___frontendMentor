@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+#wrapper{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: hsl(218, 23%, 16%);
+    color: white;
+
+    box-sizing: border-box;
+    padding-top: 10%;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 62.5%;
+
+    text-align: center;
+}
+
+#card{
+    position: relative;
+    text-align: center;
+
+    box-sizing:border-box;
+    margin: 50px auto; /*0 auto: 가운데 정렬*/
+    height: 300px;
+    width: 500px;
+    background: linear-gradient(180deg, hsl(217, 19%, 24%), hsl(219, 19%, 20%));
+    border-radius: 15px;
+}
+
+#title{
+    padding-top: 50px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: hsl(150, 100%, 66%);
+}
+
+#text{
+    margin: 30px 40px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+#line{
+    position: absolute;
+    height: 10%;
+    width: 80%;
+
+    margin: 0 10%;
+    bottom: 60px;
+    background-image: url(./images/pattern-divider-desktop.svg);
+    background-size: contain;
+    background-repeat: center;
+    background-repeat: no-repeat;
+}
+
+#button{
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+}
+
+#generator{
+    width: 60px;
+    height: 60px;
+    background-color:hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 40px;
+}
+
+#button button:hover{
+    box-shadow: 0px 0px 15px hsl(150, 100%, 66%);
+}
+
+@media(max-width:540px){
+    #card{
+        width:90vw;
+    }
+
+    #line{
+        background-image: url(./images/pattern-divider-mobile.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
