@@ -163,13 +163,16 @@ body는 ReadableString으로 보이며
 이 상태로는 response body에 접근할 수 없다.
 
 console.log(response) 결과의 body는 다음과 같다.
-![](./resoponse%20json.png)
+
+![](./resoponse%20obj.png)
+
 
 따라서 response body를 json 데이터로 바꾸어
 접근 가능한 형식으로 만들어야 한다.
 
 console.log(response.json()) 결과에서 사용해야 할 데이터는 다음과 같다.
-![](./resoponse%20obj.png)
+
+![](./resoponse%20json.png)
 
 (3)-1. api 응답 성공 시 (promise 이행)
 ```javascript
